@@ -9,8 +9,8 @@ An example of using shellscript with the P4 Plan GraphQL API.
 1. Deploy P4 Plan Server and P4 Plan GraphQL API
 2. Add a regular P4 Plan user for the Mail Portal.
    - Username: mail_portal. password: hpmadm
-   - Edit this in script.sh if you prefer other user name/password
-3. In script.sh also specify APIURL to match your deployment
+   - Edit this in P4PlanEmailPortalExample.sh if you prefer other user name/password
+3. In P4PlanEmailPortalExample.sh also specify APIURL to match your deployment
 4. Unzip to a folder readable by everyone (in particular: the mail group)
    - example: /opt/mailportal
 5. sudo apt update
@@ -25,8 +25,8 @@ An example of using shellscript with the P4 Plan GraphQL API.
     - The QA project usually has that ID + 2.
     - Example if "myproject" is ID 8472, myproject/QA will be ID: 8474
 9. Add this to /etc/aliases:
-  myproject "|/opt/mailportal/portal/script.sh 8474"
-  otherproject "|/opt/mailportal/portal/script.sh 10142"
+  myproject "|/opt/mailportal/portal/P4PlanEmailPortalExample.sh 8474"
+  otherproject "|/opt/mailportal/portal/P4PlanEmailPortalExample.sh 10142"
 10. sudo newaliases
 
 ## Usage:
@@ -42,13 +42,13 @@ An example of using shellscript with the P4 Plan GraphQL API.
 * Consider adding "echo" statements to the script for debugging.
 * Also try running curl manually with the APIURL given
 
-* When troubleshooting or developing script.sh you will find /tmp/$$
+* When troubleshooting or developing P4PlanEmailPortalExample.sh you will find /tmp/$$
   contains the e-mail for each run.
 * /tmp/errorlog contains data
 
 * Check /var/log/syslog for complaints from postfix.
 
-* Example text that script.sh can take from command line:
+* Example text that P4PlanEmailPortalExample.sh can take from command line:
 
 %< ---------------------------------------------------------------- Cut here
 
