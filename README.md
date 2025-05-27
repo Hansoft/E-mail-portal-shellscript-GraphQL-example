@@ -4,7 +4,7 @@ E-mail portal (shellscript GraphQL example)
 An example of using shellscript with the P4 Plan GraphQL API.
 
 
-##Deployment on Ubuntu:
+## Deployment on Ubuntu:
 
 1. Deploy P4 Plan Server and P4 Plan GraphQL API
 2. Add a regular P4 Plan user for the Mail Portal.
@@ -36,7 +36,7 @@ An example of using shellscript with the P4 Plan GraphQL API.
 * If the subject line of your e-mail is a number, the item with that
   database ID receives the body of the e-mail as a comment.
 
-#Troubleshooting:
+## Troubleshooting:
 
 * Uncomment the "echo $TOKEN" to see if a comment shows
 * Consider adding "echo" statements to the script for debugging.
