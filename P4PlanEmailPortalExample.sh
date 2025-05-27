@@ -4,7 +4,6 @@
 APIURL="http://localhost:4000/graphql"
 USERNAME="mail_portal"
 PASSWORD="hpmadm"
-FROMADDRESS="P4 Plan E-mail Portal <noreply@example.com>"
 
 # Input: Give project ID as the first parameter.
 # An e-mail message will be read from stdin.
