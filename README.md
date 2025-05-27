@@ -3,6 +3,20 @@ E-mail portal (shellscript GraphQL example)
 
 An example of using shellscript with the P4 Plan GraphQL API.
 
+## What the example teaches:
+
+Each query or mutation can be done as a single curl invocation.
+
+But first you need to authenticate to obtain a token.
+
+The script contains a function "login" which can be copied and used as an example of authentication. It outputs a token to stdout. This token can then be used for other mutations/queries.
+
+## Usage:
+* Send an e-mail to myproject@example.com to create a bug in that project
+  - Likewise for any other project you have listed in /etc/aliases
+  - The body of the e-mail becomes the Detailed Description of the bug.
+* If the subject line of your e-mail is a number, the item with that
+  database ID receives the body of the e-mail as a comment.
 
 ## Deployment on Ubuntu:
 
@@ -25,16 +39,11 @@ An example of using shellscript with the P4 Plan GraphQL API.
     - The QA project usually has that ID + 2.
     - Example if "myproject" is ID 8472, myproject/QA will be ID: 8474
 9. Add this to /etc/aliases:
+```
   myproject "|/opt/mailportal/portal/P4PlanEmailPortalExample.sh 8474"
   otherproject "|/opt/mailportal/portal/P4PlanEmailPortalExample.sh 10142"
+```
 10. sudo newaliases
-
-## Usage:
-* Send an e-mail to myproject@example.com to create a bug in that project
-  - Likewise for any other project you have listed in /etc/aliases
-  - The body of the e-mail becomes the Detailed Description of the bug.
-* If the subject line of your e-mail is a number, the item with that
-  database ID receives the body of the e-mail as a comment.
 
 ## Troubleshooting:
 
@@ -50,16 +59,16 @@ An example of using shellscript with the P4 Plan GraphQL API.
 
 * Example text that P4PlanEmailPortalExample.sh can take from command line:
 
+```
 %< ---------------------------------------------------------------- Cut here
-
 Subject: New bug
 
 Here is my comment.
-
+And here is a second line
 %< ---------------------------------------------------------------- Cut here
-
+```
 ## Implementation details:
 
-Consider adding decoding of e-mails once INFILE is created.
+Consider adding base64 and UTF decoding of e-mails once INFILE is created.
 
 Good luck!
