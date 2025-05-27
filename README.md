@@ -4,7 +4,7 @@ E-mail portal (shellscript GraphQL example)
 An example of using shellscript with the P4 Plan GraphQL API.
 
 
-#Deployment on Ubuntu:
+##Deployment on Ubuntu:
 
 1. Deploy P4 Plan Server and P4 Plan GraphQL API
 2. Add a regular P4 Plan user for the Mail Portal.
@@ -29,7 +29,7 @@ An example of using shellscript with the P4 Plan GraphQL API.
   otherproject "|/opt/mailportal/portal/script.sh 10142"
 10. sudo newaliases
 
-# Usage:
+## Usage:
 * Send an e-mail to myproject@example.com to create a bug in that project
   - Likewise for any other project you have listed in /etc/aliases
   - The body of the e-mail becomes the Detailed Description of the bug.
@@ -58,7 +58,7 @@ Here is my comment.
 
 %< ---------------------------------------------------------------- Cut here
 
-# Implementation details:
+## Implementation details:
 
 Consider adding decoding of e-mails once INFILE is created.
 
