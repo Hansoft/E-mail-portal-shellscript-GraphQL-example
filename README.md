@@ -1,7 +1,8 @@
-# E-mail-portal-shellscript-GraphQL-example
-E-mail portal (shellscript GraphQL example)
+# P4PlanAPI-Shellscript-Example-Email-Portal
 
-An example of using shellscript with the P4 Plan GraphQL API.
+Example to explorer the P4 Plan API in GraphQL using Shellscript and Curl. 
+
+This implements a simple e-mail portal for bug and comment submission using e-mail on Ubuntu.
 
 ## What the example teaches:
 
