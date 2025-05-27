@@ -25,7 +25,7 @@ The script contains a function "login" which can be copied and used as an exampl
    - Username: mail_portal. password: hpmadm
    - Edit this in P4PlanEmailPortalExample.sh if you prefer other user name/password
 3. In P4PlanEmailPortalExample.sh also specify APIURL to match your deployment
-4. Unzip to a folder readable by everyone (in particular: the mail group)
+4. Save the script to a folder readable by everyone (in particular: the mail group)
    - example: /opt/mailportal
 5. sudo apt update
 6. sudo apt install postfix
