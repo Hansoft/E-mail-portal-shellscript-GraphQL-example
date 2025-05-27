@@ -47,7 +47,7 @@ The script contains a function "login" which can be copied and used as an exampl
 
 ## Troubleshooting:
 
-* Uncomment the "echo $TOKEN" to see if a comment shows
+* Uncomment the "echo $TOKEN" to see if a token shows
 * Consider adding "echo" statements to the script for debugging.
 * Also try running curl manually with the APIURL given
 
